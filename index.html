@@ -1,4 +1,104 @@
 <!DOCTYPE html>
-<head> 
-    <title> My Resume </title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghaji Mahbub - Resume</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img src="assets/profile.jpg" alt="Ghaji Mahbub" class="profile-photo">
+      <div>
+        <h1 id="user-name">Ghaji Mahbub</h1>
+        <p class="subtitle">Computer Science Student | Hunter College</p>
+        <p class="contact-info">work.ghaji@gmail.com</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Semantic Nav -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+    </ul>
+  </nav>
+
+  <!-- Semantic Main -->
+  <main>
+    <!-- About Section: Targets the CSS Specificity Challenge -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p id="bio-highlight" class="bio-text">
+        Undergraduate Computer Science student at Hunter College with hands-on experience in IT operations, mobile prototyping, and cloud software tools.
+      </p>
+    </section>
+
+    <!-- Technical Skills Section (Requirement: At least one List) -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Python, Java, C/C++, Swift, Kotlin, JavaScript/TypeScript, SQL, HTML, CSS</li>
+        <li><strong>Frameworks &amp; Libraries:</strong> React, React Native, Next.js, SwiftUI, Node.js</li>
+        <li><strong>Developer Tools:</strong> Git, Docker, Kubernetes, AWS, Jira, Firebase, MySQL, PostgreSQL</li>
+        <li><strong>Core Concepts:</strong> HTTP/HTTPS, REST APIs, CI/CD, Responsive Design, CSS Specificity</li>
+      </ul>
+    </section>
+
+    <!-- Education Section (Requirement: At least one Table) -->
+    <section id="education">
+      <h2>Education &amp; Coursework</h2>
+      <table class="edu-table">
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Graduation</th>
+            <th>Key Coursework</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bachelor's in Computer Science</td>
+            <td>Hunter College, CUNY</td>
+            <td>Expected Dec 2026</td>
+            <td>Practical Web Development, Discrete Structures</td>
+          </tr>
+          <tr>
+            <td>Associate's in Computer Science</td>
+            <td>New York City College of Technology, CUNY</td>
+            <td>Aug 2025</td>
+            <td>Data Structures &amp; Algorithms, Computer Systems, Linear Algebra</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <article>
+        <h3>IT Intern — NYC Department of Probation</h3>
+        <p class="role-date">New York, NY | Jul 2024 – Jan 2025</p>
+        <ul>
+          <li>Assisted in pre-design and planning for the agency's first mobile smartphone application.</li>
+          <li>Collaborated with software vendors to deploy food pantry solutions, boosting operational efficiency.</li>
+          <li>Configured client PCs and cloned mobile devices to maintain enterprise system reliability.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <p>&copy; 2026 Ghaji Mahbub. Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
