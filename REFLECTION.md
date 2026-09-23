@@ -19,3 +19,6 @@ finally rendering the finished visual resume on the screen.
 
 2. Use of AI.
 Answer: Gemini AI. Prompt used- "Here is my resume that I have created, what would be the CSS code if I wanted to display it on a live site similar to https://about.me/waizrahim"
+
+Issues: Profile picture is falling back to its alt text because the browser is getting a 404 error on the image path.
+Manual Solution: Cleared the cached 404
