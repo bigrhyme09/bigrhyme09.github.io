@@ -8,7 +8,7 @@ EMPLID 24127489
 QUESTIONS
 1. Describe the path an HTTP Request takes from a browser to your GitHub Pages site.
 
-Answer: /* 
+Answer:
 When we enter bigrhyme09.github.io into our browser then the browser first performs a DNS lookup to translate that domain name into GitHub's numerical IP address. 
 Once the IP address is identified the browser establishes a secure connection to GitHub's server using a TCP handshake followed by a TLS handshake for HTTPS encryption. 
 It then transmits an HTTP GET request asking for the root webpage.

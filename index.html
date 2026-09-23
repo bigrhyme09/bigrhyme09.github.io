@@ -11,26 +11,27 @@
   <!-- Header -->
   <header>
     <div class="header-content">
-      <img src="assets/profile.jpg" alt="Ghaji Mahbub" class="profile-photo">
+      <img src="assets/profile.jpg" alt="Ghaji Mahbub Headshot" class="profile-photo">
       <div>
         <h1 id="user-name">Ghaji Mahbub</h1>
         <p class="subtitle">Computer Science Student | Hunter College</p>
-        <p class="contact-info">work.ghaji@gmail.com</p>
+        <p class="contact-info">Email: <a href="mailto:work.ghaji@gmail.com">work.ghaji@gmail.com</a></p>
       </div>
     </div>
   </header>
 
-  <!-- Semantic Nav -->
+  <!-- Nav -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
   </nav>
 
-  <!-- Semantic Main -->
+  <!-- Main -->
   <main>
     <!-- About Section: Targets the CSS Specificity Challenge -->
     <section id="about">
@@ -40,27 +41,27 @@
       </p>
     </section>
 
-    <!-- Technical Skills Section (Requirement: At least one List) -->
+    <!-- Technical Skills Section -->
     <section id="skills">
       <h2>Technical Skills</h2>
       <ul class="skills-list">
-        <li><strong>Languages:</strong> Python, Java, C/C++, Swift, Kotlin, JavaScript/TypeScript, SQL, HTML, CSS</li>
-        <li><strong>Frameworks &amp; Libraries:</strong> React, React Native, Next.js, SwiftUI, Node.js</li>
-        <li><strong>Developer Tools:</strong> Git, Docker, Kubernetes, AWS, Jira, Firebase, MySQL, PostgreSQL</li>
-        <li><strong>Core Concepts:</strong> HTTP/HTTPS, REST APIs, CI/CD, Responsive Design, CSS Specificity</li>
+        <li><strong>Languages:</strong> Python, Java, C/C++, Swift, Kotlin, R, JavaScript/TypeScript, SQL, Scala, HTML, CSS</li>
+        <li><strong>Frameworks &amp; Libraries:</strong> React, React Native, Next.js, SwiftUI, Node.js, Pandas, NumPy, Matplotlib</li>
+        <li><strong>Tools:</strong> Git, Jira, AWS (EC2, S3, RDS), Posit Cloud, Mermaid, Figma, Canva, Firebase, PostgreSQL, MySQL, MongoDB, Seamless Doc, GovOS</li>
+        <li><strong>Core Concepts:</strong> Distributed Systems, Agile Development, HTTP Architecture, CSS Specificity</li>
       </ul>
     </section>
 
-    <!-- Education Section (Requirement: At least one Table) -->
+    <!-- Education Section -->
     <section id="education">
       <h2>Education &amp; Coursework</h2>
       <table class="edu-table">
         <thead>
           <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Graduation</th>
-            <th>Key Coursework</th>
+            <th scope="col">Degree</th>
+            <th scope="col">Institution</th>
+            <th scope="col">Graduation Date</th>
+            <th scope="col">Relevant Coursework</th>
           </tr>
         </thead>
         <tbody>
@@ -74,28 +75,47 @@
             <td>Associate's in Computer Science</td>
             <td>New York City College of Technology, CUNY</td>
             <td>Aug 2025</td>
-            <td>Data Structures &amp; Algorithms, Computer Systems, Linear Algebra</td>
+            <td>Data Structures &amp; Algorithms, Computer Systems, Discrete Structure II, Linear Algebra</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Professional Experience Section -->
     <section id="experience">
       <h2>Professional Experience</h2>
       <article>
-        <h3>IT Intern — NYC Department of Probation</h3>
-        <p class="role-date">New York, NY | Jul 2024 – Jan 2025</p>
-        <ul>
+        <h3>IT Intern &mdash; NYC Department of Probation</h3>
+        <p class="role-date">New York, NY | Jul 2024 &ndash; Jan 2025</p>
+        <ul class="exp-list">
           <li>Assisted in pre-design and planning for the agency's first mobile smartphone application.</li>
-          <li>Collaborated with software vendors to deploy food pantry solutions, boosting operational efficiency.</li>
-          <li>Configured client PCs and cloned mobile devices to maintain enterprise system reliability.</li>
+          <li>Spearheaded collaboration with software vendors for food pantry solutions, improving operational efficiency by 95.2%.</li>
+          <li>Deployed client workstations and configured IoT cloning on Surface tablets, ensuring system reliability.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Research &amp; Development &mdash; String Collection Inc.</h3>
+        <p class="role-date">Dhaka, Bangladesh | Jan 2015 &ndash; Dec 2022</p>
+        <ul class="exp-list">
+          <li>Conducted market research and trend analyses to guide inventory decisions and procurement.</li>
+          <li>Managed relationships with over 30 international suppliers, negotiating contracts to cut costs by 40%.</li>
         </ul>
       </article>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <ul class="exp-list">
+        <li><strong>DOP Smartphone Application:</strong> Mobile application designed and drafted with Figma, Swift, Python, and C.</li>
+        <li><strong>String &amp; Co. Website:</strong> Commercial web platform developed with Squarespace, JavaScript, and custom CSS.</li>
+        <li><strong>EMSBB Production:</strong> End-to-end production pipeline for sustainable and ethically made knitwear blanks.</li>
+      </ul>
+    </section>
   </main>
 
-  <!-- Semantic Footer -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Ghaji Mahbub. Hosted on GitHub Pages.</p>
   </footer>
