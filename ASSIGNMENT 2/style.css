@@ -1,0 +1,290 @@
+/* --- Base Reset & Typography --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #24292f;
+  background-color: #f6f8fa;
+  line-height: 1.6;
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+/* --- Task 1: Flexbox Navigation --- */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo to left, links to right */
+  align-items: center;            /* Vertical alignment */
+  background-color: #1f2328;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+}
+
+.nav-links a {
+  color: #d0d7de;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* --- Header Section --- */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d0d7de;
+  padding: 2.5rem 1.5rem;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d0d7de;
+}
+
+#user-name {
+  font-size: 2rem;
+  color: #1f2328;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #57606a;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info {
+  font-size: 0.95rem;
+  color: #57606a;
+}
+
+/* --- Main Layout & Resume Sections --- */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #1f2328;
+  border-bottom: 2px solid #eaeef2;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* About / Specificity */
+.bio-text {
+  font-size: 1rem;
+  color: #333333;
+}
+
+#bio-highlight {
+  color: #0969da;
+}
+
+/* Skills List */
+.skills-list {
+  list-style: square;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Education Table */
+.table-container {
+  overflow-x: auto;
+}
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.edu-table th, .edu-table td {
+  border: 1px solid #d0d7de;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.edu-table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+/* Experience Articles */
+#experience article {
+  margin-bottom: 1.5rem;
+}
+
+#experience article:last-child {
+  margin-bottom: 0;
+}
+
+#experience h3 {
+  font-size: 1.2rem;
+  color: #1f2328;
+}
+
+.role-date {
+  font-size: 0.9rem;
+  color: #57606a;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.exp-list {
+  padding-left: 1.5rem;
+}
+
+.exp-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* --- Task 2: CSS Grid Projects Showcase (Desktop: 3 Columns) --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  gap: 1.5rem;                           /* grid-gap */
+}
+
+.project-card {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fafbfc;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1f2328;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #57606a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #d0d7de;
+  color: #57606a;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+}
+
+/* --- Task 3: Responsive Media Queries --- */
+@media (max-width: 768px) {
+  /* Navigation stacks vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* Header adjustments for mobile */
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Project Grid collapses from 3 columns to 1 column */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Typography scaled down for mobile screens */
+  #user-name {
+    font-size: 1.6rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.05rem;
+  }
+}

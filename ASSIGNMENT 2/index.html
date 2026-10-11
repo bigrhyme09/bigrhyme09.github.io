@@ -8,6 +8,18 @@
 </head>
 <body>
 
+  <!-- Task 1: Flexbox Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">Ghaji Mahbub</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
   <!-- Header -->
   <header>
     <div class="header-content">
@@ -19,17 +31,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Nav -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
 
   <!-- Main -->
   <main>
@@ -55,30 +56,32 @@
     <!-- Education Section -->
     <section id="education">
       <h2>Education &amp; Coursework</h2>
-      <table class="edu-table">
-        <thead>
-          <tr>
-            <th scope="col">Degree</th>
-            <th scope="col">Institution</th>
-            <th scope="col">Graduation Date</th>
-            <th scope="col">Relevant Coursework</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bachelor's in Computer Science</td>
-            <td>Hunter College, CUNY</td>
-            <td>Expected Dec 2026</td>
-            <td>Practical Web Development, Software Analysis and Design, Discrete Structures</td>
-          </tr>
-          <tr>
-            <td>Associate's in Computer Science</td>
-            <td>New York City College of Technology, CUNY</td>
-            <td>Aug 2025</td>
-            <td>Data Structures &amp; Algorithms, Computer Systems, Discrete Structure II, Linear Algebra</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table class="edu-table">
+          <thead>
+            <tr>
+              <th scope="col">Degree</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Graduation Date</th>
+              <th scope="col">Relevant Coursework</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bachelor's in Computer Science</td>
+              <td>Hunter College, CUNY</td>
+              <td>Expected Dec 2026</td>
+              <td>Practical Web Development, Software Analysis and Design, Discrete Structures</td>
+            </tr>
+            <tr>
+              <td>Associate's in Computer Science</td>
+              <td>New York City College of Technology, CUNY</td>
+              <td>Aug 2025</td>
+              <td>Data Structures &amp; Algorithms, Computer Systems, Discrete Structure II, Linear Algebra</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- Professional Experience Section -->
@@ -104,14 +107,34 @@
       </article>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Task 2: CSS Grid Projects Showcase (3 items with image, title, and description) -->
     <section id="projects">
       <h2>Featured Projects</h2>
-      <ul class="exp-list">
-        <li><strong>DOP Smartphone Application:</strong> Mobile application designed and drafted with Figma, Swift, Python, and C.</li>
-        <li><strong>String &amp; Co. Website:</strong> Commercial web platform developed with Squarespace, JavaScript, and custom CSS.</li>
-        <li><strong>EMSBB Production:</strong> End-to-end production pipeline for sustainable and ethically made knitwear blanks.</li>
-      </ul>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=80" alt="Smartphone Application Interface" />
+          <div class="project-info">
+            <h3>DOP Smartphone Application</h3>
+            <p>Mobile application designed and drafted with Figma, Swift, Python, and C to improve probation services workflow.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80" alt="Web Development and Analytics" />
+          <div class="project-info">
+            <h3>String &amp; Co. Website</h3>
+            <p>Commercial web platform developed with Squarespace, JavaScript, and custom CSS for client engagement.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&auto=format&fit=crop&q=80" alt="Textile and Manufacturing Pipeline" />
+          <div class="project-info">
+            <h3>EMSBB Production</h3>
+            <p>End-to-end production pipeline and sourcing management for sustainable and ethically made knitwear blanks.</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
