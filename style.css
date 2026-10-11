@@ -170,10 +170,15 @@ h3 {
   flex-direction: column;
 }
 
+/* Image Sizing */
+
 .project-img {
   width: 100%;
-  height: 140px;
+  height: 160px;
   object-fit: cover;
+  object-position: center;
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #d0d7de;
   display: block;
 }
 
@@ -230,8 +235,8 @@ p {
 }
 
 #bio-highlight {
-  color: #0969da;
-  font-weight: 600;
+  color: #000000;
+  font-weight: 500;
 }
 
 /* FOOTER */
